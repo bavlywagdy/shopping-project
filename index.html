@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mobile Store</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-img">
+             <img src="images/th.jpg" alt="">
+             <h3 class="nav-text">Mobile Store</h3>
+            </div>
+            <div class="nav-list">
+              <ul>
+                <li class="nav-link"><a href="index.html">Home</a></li>
+                <li class="nav-link"><a href="Phones.html">Phones</a></li>
+              <li class="nav-link"><a href="contact.html">Contact us</a></li>
+              </ul>
+            </div>
+          </nav>
+
+    <h1>Mobile store </h1>
+
+    <div class="container">
+        <div id="catalog"  class="grid-container">
+       
+          <div class="product">
+            <img src="images/OIP (2).jpg" alt="Iphone X">
+            <h3>Iphone X</h3>
+            <p>Price: $999.99</p>
+            <div class="product-action">
+                <button onclick="decrementQuantity('Iphone X')">-</button>
+                <span id="quantity-Iphone 13">0</span>
+                <button onclick="incrementQuantity('Iphone X')">+</button>
+            </div>
+            <button onclick="addToCart('Iphone X', 999.99)">
+                <div class="default-btn">
+                    <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="black" height="20" width="20" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle r="3" cy="12" cx="12"></circle></svg>
+                    <span>Shop Now</span>
+                  </div>
+                  <div class="hover-btn">
+                    <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="cornflowerblue" height="20" width="20" viewBox="0 0 24 24"><circle r="1" cy="21" cx="9"></circle><circle r="1" cy="21" cx="20"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    <span>Add to Cart</span>
+                  </div>
+                </button>
+            <button class="like-button" onclick="toggleLikeButton(this)">&#x2661;</button>
+        </div>
+        <!-- test product -->
+        <div class="product">
+            <img src="images/iPhone_13_Pro_Silver_PDP_Image_position-1A_EN.jpg" alt="Iphone 13">
+            <h3>Iphone 13</h3>
+            <p>Price: $1799.99</p>
+            <div class="product-action">
+                <button onclick="decrementQuantity('Iphone 13')">-</button>
+                <span id="quantity-Iphone 13">0</span>
+                <button onclick="incrementQuantity('Iphone 13')">+</button>
+            </div>
+            <button onclick="addToCart('Iphone 13', 1799.99)">
+                <div class="default-btn">
+                    <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="black" height="20" width="20" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle r="3" cy="12" cx="12"></circle></svg>
+                    <span>Shop Now</span>
+                  </div>
+                  <div class="hover-btn">
+                    <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="cornflowerblue" height="20" width="20" viewBox="0 0 24 24"><circle r="1" cy="21" cx="9"></circle><circle r="1" cy="21" cx="20"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    <span>Add to Cart</span>
+                  </div>
+                </button>
+            <button class="like-button" onclick="toggleLikeButton(this)">&#x2661;</button>
+        </div>
+        <!--  -->
+      
+      <div class="product">
+            <img src="images/image-ae45de3ac2bd451da2176fe387c874f2.webp" alt="Iphone 13">
+            <h3>Redmi Note 11 Pro</h3>
+            <p>Price: $1299.99</p>
+            <div class="product-action">
+                <button onclick="decrementQuantity('Redmi Note 11 Pro')">-</button>
+                <span id="quantity-Silicon cover">0</span>
+                <button onclick="incrementQuantity('Redmi Note 11 Pro')">+</button>
+            </div>
+            <button onclick="addToCart('Redmi Note 11 Pro', 1299.99)">
+                <div class="default-btn">
+                    <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="black" height="20" width="20" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle r="3" cy="12" cx="12"></circle></svg>
+                    <span>Shop Now</span>
+                  </div>
+                  <div class="hover-btn">
+                    <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="cornflowerblue" height="20" width="20" viewBox="0 0 24 24"><circle r="1" cy="21" cx="9"></circle><circle r="1" cy="21" cx="20"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    <span>Add to Cart</span>
+                  </div>
+            </button>
+            <button class="like-button" onclick="toggleLikeButton(this)">&#x2661;</button>
+        </div>
+
+        <!-- head section -->
+                    <div class="product">
+
+                <img src="images/0487406_promate-airbeat-bluetooth-headset-blue.webp" alt="HeadPhone">
+                <h3>Apple Airpod Max</h3>
+                <p>Price: $699.99</p>
+                <div class="product-action">
+                    <button onclick="decrementQuantity('Apple Airpod Max')">-</button>
+                    <span id="quantity-HeadPhone">0</span>
+                    <button onclick="incrementQuantity('Apple Airpod Max')">+</button>
+                </div>
+                <button onclick="addToCart('Apple Airpod Max', 699.99)">
+                    <div class="default-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="black" height="20" width="20" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle r="3" cy="12" cx="12"></circle></svg>
+                        <span>Shop Now</span>
+                      </div>
+                      <div class="hover-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="cornflowerblue" height="20" width="20" viewBox="0 0 24 24"><circle r="1" cy="21" cx="9"></circle><circle r="1" cy="21" cx="20"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                        <span>Add to Cart</span>
+                      </div>
+                </button>
+                <button class="like-button" onclick="toggleLikeButton(this)">&#x2661;</button>
+            </div>
+
+          <div class="product">
+                <img src="images/20220323104346flRQ30.jpg" alt="Samsung s23 Ultra">
+                <h3>Xiaomi Buds 3 Pro</h3>
+                <p>Price: $499.99</p>
+                <div class="product-action">
+                    <button onclick="decrementQuantity('Xiaomi Buds 3 Pro')">-</button>
+                    <span id="quantity-Samsung s23 Ultra">0</span>
+                    <button onclick="incrementQuantity('Xiaomi Buds 3 Pro')">+</button>
+                </div>
+                <button onclick="addToCart('SXiaomi Buds 3 Pro', 499.99)">
+                    <div class="default-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="black" height="20" width="20" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle r="3" cy="12" cx="12"></circle></svg>
+                        <span>Shop Now</span>
+                      </div>
+                      <div class="hover-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="cornflowerblue" height="20" width="20" viewBox="0 0 24 24"><circle r="1" cy="21" cx="9"></circle><circle r="1" cy="21" cx="20"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                        <span>Add to Cart</span>
+                      </div>
+                </button>
+                <button class="like-button" onclick="toggleLikeButton(this)">&#x2661;</button>
+            </div>
+          
+          <div class="product">
+                <img src="images/e63e4014e39991c8121398fc0deac1c4.jpg" alt="Airpods pro 2">
+                <h3>Airpods pro 2</h3>
+                <p>Price: $599.99</p>
+                <div class="product-action">
+                    <button onclick="decrementQuantity('Airpods pro 2')">-</button>
+                    <span id="quantity-Iphone 13">0</span>
+                    <button onclick="incrementQuantity('Airpods pro 2')">+</button>
+                </div>
+                <button onclick="addToCart('Airpods pro 2', 599.99)">
+                    <div class="default-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="black" height="20" width="20" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle r="3" cy="12" cx="12"></circle></svg>
+                        <span>Shop Now</span>
+                      </div>
+                      <div class="hover-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="cornflowerblue" height="20" width="20" viewBox="0 0 24 24"><circle r="1" cy="21" cx="9"></circle><circle r="1" cy="21" cx="20"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                        <span>Add to Cart</span>
+                      </div>
+                </button>
+                <button class="like-button" onclick="toggleLikeButton(this)">&#x2661;</button>
+            </div>
+
+            <div class="product">
+              <img src="images/EDA00722901N_1.jpg" alt="Samsung s23 Ultra">
+              <h3>Iphone 11 Pro Case</h3>
+              <p>Price: $29.99</p>
+              <div class="product-action">
+                  <button onclick="decrementQuantity('Iphone 11 Pro Case')">-</button>
+                  <span id="quantity-Samsung s23 Ultra">0</span>
+                  <button onclick="incrementQuantity('Iphone 11 Pro Case')">+</button>
+              </div>
+              <button onclick="addToCart('Iphone 11 Pro Case', 29.99)">
+                  <div class="default-btn">
+                      <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="black" height="20" width="20" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle r="3" cy="12" cx="12"></circle></svg>
+                      <span>Shop Now</span>
+                    </div>
+                    <div class="hover-btn">
+                      <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="cornflowerblue" height="20" width="20" viewBox="0 0 24 24"><circle r="1" cy="21" cx="9"></circle><circle r="1" cy="21" cx="20"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                      <span>Add to Cart</span>
+                    </div>
+              </button>
+              <button class="like-button" onclick="toggleLikeButton(this)">&#x2661;</button>
+          </div>
+
+          <div class="product">
+            <img src="images/OIP (7).jpg" alt="Samsung s23 Ultra">
+            <h3>Xiaomi 10 Case</h3>
+            <p>Price: $19.99</p>
+            <div class="product-action">
+                <button onclick="decrementQuantity('Xiaomi 10 Case')">-</button>
+                <span id="quantity-Samsung s23 Ultra">0</span>
+                <button onclick="incrementQuantity('Xiaomi 10 Case')">+</button>
+            </div>
+            <button onclick="addToCart('Xiaomi 10 Case', 19.99)">
+                <div class="default-btn">
+                    <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="black" height="20" width="20" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle r="3" cy="12" cx="12"></circle></svg>
+                    <span>Shop Now</span>
+                  </div>
+                  <div class="hover-btn">
+                    <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="cornflowerblue" height="20" width="20" viewBox="0 0 24 24"><circle r="1" cy="21" cx="9"></circle><circle r="1" cy="21" cx="20"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    <span>Add to Cart</span>
+                  </div>
+            </button>
+            <button class="like-button" onclick="toggleLikeButton(this)">&#x2661;</button>
+        </div>
+          
+            <div class="product">
+                <img src="images/PR0186592_e1d452564beffc67cd7e7bde96efe6a9_141829_1_c22dcc50c9be879fe66bbee43f8913a2.png" alt="Cover transparent">
+                <h3>Transparent Case</h3>
+                <p>Price: $27.99</p>
+                <div class="product-action">
+                    <button onclick="decrementQuantity('Transparent Case')">-</button>
+                    <span id="quantity-Cover transparent">0</span>
+                    <button onclick="incrementQuantity('Transparent Case')">+</button>
+                </div>
+                <button onclick="addToCart('Transparent Case', 27.99)">
+                    <div class="default-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="black" height="20" width="20" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle r="3" cy="12" cx="12"></circle></svg>
+                        <span>Shop Now</span>
+                      </div>
+                      <div class="hover-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="#fff" height="20" width="20" viewBox="0 0 24 24"><circle r="1" cy="21" cx="9"></circle><circle r="1" cy="21" cx="20"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                        <span>Add to Cart</span>
+                      </div>
+                </button>
+                <button class="like-button" onclick="toggleLikeButton(this)">&#x2661;</button>
+            </div>
+        </div>
+  
+      </section>
+            
+<!-- view bottom -->
+        <div class="view-more">
+        <span><a href="check.html">View More</a></span>
+        </div>
+<!----------------------------------------------------------------->
+
+
+<!--  -->
+    </div>
+    <section class="locations">
+    <h1>Our Location</h1>
+</div>
+<div class="location-conatiner">
+    <!--location-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.860466593967!2d2.353225223658159!3d48.87993647133495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e6b95100001%3A0x90cc8168ca8db65b!2sMobile%20Store%20-%20Shannon%20International!5e0!3m2!1sar!2seg!4v1702752262310!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+</div>
+</section>
+
+</header>
+<footer>
+  <div class="footer-content">
+      <div class="footer-logo">
+          <img src="images/th.jpg" alt="Mobile Store Logo">
+          <h3>Mobile Store</h3>
+      </div>
+
+      <div class="footer-links">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Phones.html">Phones</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+          </ul>
+      </div>
+
+  </div>
+
+  <div class="footer-bottom">
+      <p>&copy; 2023 Mobile Store. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+
+</html>
+            <!-- <div class="product">
+                <img src="images/oneplus-10ta.gif" alt="HeadPhone">
+                <h3>HeadPhone</h3>
+                <p>Price: $59.99</p>
+                <div class="product-action">
+                    <button onclick="decrementQuantity('HeadPhone')">-</button>
+                    <span id="quantity-HeadPhone">0</span>
+                    <button onclick="incrementQuantity('HeadPhone')">+</button>
+                </div>
+                <button onclick="addToCart('HeadPhone', 59.99)">
+                    <div class="default-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="black" height="20" width="20" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle r="3" cy="12" cx="12"></circle></svg>
+                        <span>Shop Now</span>
+                      </div>
+                      <div class="hover-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="#fff" height="20" width="20" viewBox="0 0 24 24"><circle r="1" cy="21" cx="9"></circle><circle r="1" cy="21" cx="20"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                        <span>Add to Cart</span>
+                      </div>
+                </button>
+                <button class="like-button" onclick="toggleLikeButton(this)">&#x2661;</button>
+            </div>
+
+          <div class="product">
+                <img src="images/OIP (4).jpg" alt="Samsung s23 Ultra">
+                <h3>Samsung s23 Ultra</h3>
+                <p>Price: $799.99</p>
+                <div class="product-action">
+                    <button onclick="decrementQuantity('Samsung s23 Ultra')">-</button>
+                    <span id="quantity-Samsung s23 Ultra">0</span>
+                    <button onclick="incrementQuantity('Samsung s23 Ultra')">+</button>
+                </div>
+                <button onclick="addToCart('Samsung s23 Ultra', 799.99)">
+                    <div class="default-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="black" height="20" width="20" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle r="3" cy="12" cx="12"></circle></svg>
+                        <span>Shop Now</span>
+                      </div>
+                      <div class="hover-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="#fff" height="20" width="20" viewBox="0 0 24 24"><circle r="1" cy="21" cx="9"></circle><circle r="1" cy="21" cx="20"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                        <span>Add to Cart</span>
+                      </div>
+                </button>
+                <button class="like-button" onclick="toggleLikeButton(this)">&#x2661;</button>
+            </div>
+          
+          <div class="product">
+                <img src="images/OIP (5).jpg" alt="Airpods pro 2">
+                <h3>Airpods pro 2</h3>
+                <p>Price: $299.99</p>
+                <div class="product-action">
+                    <button onclick="decrementQuantity('Airpods pro 2')">-</button>
+                    <span id="quantity-Iphone 13">0</span>
+                    <button onclick="incrementQuantity('Airpods pro 2')">+</button>
+                </div>
+                <button onclick="addToCart('Airpods pro 2', 599.99)">
+                    <div class="default-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="black" height="20" width="20" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle r="3" cy="12" cx="12"></circle></svg>
+                        <span>Shop Now</span>
+                      </div>
+                      <div class="hover-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="#fff" height="20" width="20" viewBox="0 0 24 24"><circle r="1" cy="21" cx="9"></circle><circle r="1" cy="21" cx="20"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                        <span>Add to Cart</span>
+                      </div>
+                </button>
+                <button class="like-button" onclick="toggleLikeButton(this)">&#x2661;</button>
+            </div>
+          
+            <div class="product">
+                <img src="images/n41272020a_1_hl3v73atz0iv7bgf.jpg" alt="Cover transparent">
+                <h3>Cover transparent</h3>
+                <p>Price: $29.99</p>
+                <div class="product-action">
+                    <button onclick="decrementQuantity('Cover transparent')">-</button>
+                    <span id="quantity-Cover transparent">0</span>
+                    <button onclick="incrementQuantity('Cover transparent')">+</button>
+                </div>
+                <button onclick="addToCart('Cover transparent', 29.99)">
+                    <div class="default-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="black" height="20" width="20" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle r="3" cy="12" cx="12"></circle></svg>
+                        <span>Shop Now</span>
+                      </div>
+                      <div class="hover-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="#fff" height="20" width="20" viewBox="0 0 24 24"><circle r="1" cy="21" cx="9"></circle><circle r="1" cy="21" cx="20"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                        <span>Add to Cart</span>
+                      </div>
+                </button>
+                <button class="like-button" onclick="toggleLikeButton(this)">&#x2661;</button>
+            </div>
+        </div> -->
+        <!-- <button class="more-products"><a href="check.html">View More</a></button> -->
