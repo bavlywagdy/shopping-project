@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phones</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-img">
+             <img src="images/th.jpg" alt="">
+             <h3 class="nav-text">Mobile Store</h3>
+            </div>
+            <div class="nav-list">
+              <ul>
+                <li class="nav-link"><a href="index.html">Home</a></li>
+                <li class="nav-link"><a href="Phones.html">Phones</a></li>
+              <li class="nav-link"><a href="contact.html">Contact us</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <!--  -->
+          <div id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items">
+            </ul>
+            <p id="total">Total: $0</p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+        <!--------------------------------------------------------------------->
+          <div class="container">
+            <div id="catalog"  class="grid-container">
+           
+              <div class="product">
+                <img src="images/oneplus-10ta.gif" alt="One Plus">
+                <h3>One Plus</h3>
+                <p>Price: $999.99</p>
+                <div class="product-action">
+                    <button onclick="decrementQuantity('One Plus')">-</button>
+                    <span id="quantity-HeadPhone">0</span>
+                    <button onclick="incrementQuantity('One Plus')">+</button>
+                </div>
+                <button onclick="addToCart('One Plus', 999.99)">
+                    <div class="default-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="black" height="20" width="20" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle r="3" cy="12" cx="12"></circle></svg>
+                        <span>Shop Now</span>
+                      </div>
+                      <div class="hover-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="cornflowerblue" height="20" width="20" viewBox="0 0 24 24"><circle r="1" cy="21" cx="9"></circle><circle r="1" cy="21" cx="20"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                        <span>Add to Cart</span>
+                      </div>
+                </button>
+                <button class="like-button" onclick="toggleLikeButton(this)">&#x2661;</button>
+            </div>
+
+          <div class="product">
+                <img src="images/OIP (4).jpg" alt="Samsung s23 Ultra">
+                <h3>Samsung s23 Ultra</h3>
+                <p>Price: $1199.99</p>
+                <div class="product-action">
+                    <button onclick="decrementQuantity('Samsung s23 Ultra')">-</button>
+                    <span id="quantity-Samsung s23 Ultra">0</span>
+                    <button onclick="incrementQuantity('Samsung s23 Ultra')">+</button>
+                </div>
+                <button onclick="addToCart('Samsung s23 Ultra', 1199.99)">
+                    <div class="default-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="black" height="20" width="20" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle r="3" cy="12" cx="12"></circle></svg>
+                        <span>Shop Now</span>
+                      </div>
+                      <div class="hover-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="cornflowerblue" height="20" width="20" viewBox="0 0 24 24"><circle r="1" cy="21" cx="9"></circle><circle r="1" cy="21" cx="20"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                        <span>Add to Cart</span>
+                      </div>
+                </button>
+                <button class="like-button" onclick="toggleLikeButton(this)">&#x2661;</button>
+            </div>
+          
+          <div class="product">
+                <img src="images/OIP (5).jpg" alt="Nove 9 Pro">
+                <h3>Nove 9 Pro</h3>
+                <p>Price: $799.99</p>
+                <div class="product-action">
+                    <button onclick="decrementQuantity('Nove 9 Pro')">-</button>
+                    <span id="quantity-Iphone 13">0</span>
+                    <button onclick="incrementQuantity('Nove 9 Pro')">+</button>
+                </div>
+                <button onclick="addToCart('Nova 9 Pro ', 799.99)">
+                    <div class="default-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="black" height="20" width="20" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle r="3" cy="12" cx="12"></circle></svg>
+                        <span>Shop Now</span>
+                      </div>
+                      <div class="hover-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="cornflowerblue" height="20" width="20" viewBox="0 0 24 24"><circle r="1" cy="21" cx="9"></circle><circle r="1" cy="21" cx="20"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                        <span>Add to Cart</span>
+                      </div>
+                </button>
+                <button class="like-button" onclick="toggleLikeButton(this)">&#x2661;</button>
+            </div>
+            
+                <div class="product">
+                    <img src="images/OIP (2).jpg" alt="Iphone X">
+                    <h3>Iphone X</h3>
+                    <p>Price: $999.99</p>
+                    <div class="product-action">
+                        <button onclick="decrementQuantity('Iphone X')">-</button>
+                        <span id="quantity-Iphone 13">0</span>
+                        <button onclick="incrementQuantity('Iphone X')">+</button>
+                    </div>
+                    <button onclick="addToCart('Iphone X', 999.99)">
+                        <div class="default-btn">
+                            <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="black" height="20" width="20" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle r="3" cy="12" cx="12"></circle></svg>
+                            <span>Shop Now</span>
+                          </div>
+                          <div class="hover-btn">
+                            <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="cornflowerblue" height="20" width="20" viewBox="0 0 24 24"><circle r="1" cy="21" cx="9"></circle><circle r="1" cy="21" cx="20"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                            <span>Add to Cart</span>
+                          </div>
+                        </button>
+                    <button class="like-button" onclick="toggleLikeButton(this)">&#x2661;</button>
+                </div>
+                <!-- test product -->
+                <div class="product">
+                    <img src="images/iPhone_13_Pro_Silver_PDP_Image_position-1A_EN.jpg" alt="Iphone 13">
+                    <h3>Iphone 13</h3>
+                    <p>Price: $1799.99</p>
+                    <div class="product-action">
+                        <button onclick="decrementQuantity('Iphone 13')">-</button>
+                        <span id="quantity-Iphone 13">0</span>
+                        <button onclick="incrementQuantity('Iphone 13')">+</button>
+                    </div>
+                    <button onclick="addToCart('Iphone 13', 1799.99)">
+                        <div class="default-btn">
+                            <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="black" height="20" width="20" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle r="3" cy="12" cx="12"></circle></svg>
+                            <span>Shop Now</span>
+                          </div>
+                          <div class="hover-btn">
+                            <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="cornflowerblue" height="20" width="20" viewBox="0 0 24 24"><circle r="1" cy="21" cx="9"></circle><circle r="1" cy="21" cx="20"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                            <span>Add to Cart</span>
+                          </div>
+                        </button>
+                    <button class="like-button" onclick="toggleLikeButton(this)">&#x2661;</button>
+                </div>
+                <!--  -->
+              
+              <div class="product">
+                    <img src="images/image-ae45de3ac2bd451da2176fe387c874f2.webp" alt="Iphone 13">
+                    <h3>Redmi Note 11 Pro</h3>
+                    <p>Price: $1299.99</p>
+                    <div class="product-action">
+                        <button onclick="decrementQuantity('Redmi Note 11 Pro')">-</button>
+                        <span id="quantity-Silicon cover">0</span>
+                        <button onclick="incrementQuantity('Redmi Note 11 Pro')">+</button>
+                    </div>
+                    <button onclick="addToCart('Redmi Note 11 Pro', 1299.99)">
+                        <div class="default-btn">
+                            <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="black" height="20" width="20" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle r="3" cy="12" cx="12"></circle></svg>
+                            <span>Shop Now</span>
+                          </div>
+                          <div class="hover-btn">
+                            <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="cornflowerblue" height="20" width="20" viewBox="0 0 24 24"><circle r="1" cy="21" cx="9"></circle><circle r="1" cy="21" cx="20"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                            <span>Add to Cart</span>
+                          </div>
+                    </button>
+                    <button class="like-button" onclick="toggleLikeButton(this)">&#x2661;</button>
+                </div>
+
+                <div class="product">
+                  <img src="images/Honor-X9a-5G-Midnight-Black.jpg" alt="Honor X9a">
+                  <h3>Honor X9a</h3>
+                  <p>Price: $1599.99</p>
+                  <div class="product-action">
+                      <button onclick="decrementQuantity('Honor X9a')">-</button>
+                      <span id="quantity-HeadPhone">0</span>
+                      <button onclick="incrementQuantity('Honor X9a')">+</button>
+                  </div>
+                  <button onclick="addToCart('Honor X9a', 999.99)">
+                      <div class="default-btn">
+                          <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="black" height="20" width="20" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle r="3" cy="12" cx="12"></circle></svg>
+                          <span>Shop Now</span>
+                        </div>
+                        <div class="hover-btn">
+                          <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="cornflowerblue" height="20" width="20" viewBox="0 0 24 24"><circle r="1" cy="21" cx="9"></circle><circle r="1" cy="21" cx="20"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                          <span>Add to Cart</span>
+                        </div>
+                  </button>
+                  <button class="like-button" onclick="toggleLikeButton(this)">&#x2661;</button>
+              </div>
+
+              <div class="product">
+                <img src="images/oppo_reno8_shimmer_gold.jpg" alt="Oppo Reno 8">
+                <h3>Oppo Reno 8</h3>
+                <p>Price: $1099.99</p>
+                <div class="product-action">
+                    <button onclick="decrementQuantity('Oppo Reno 8')">-</button>
+                    <span id="quantity-HeadPhone">0</span>
+                    <button onclick="incrementQuantity('Oppo Reno 8')">+</button>
+                </div>
+                <button onclick="addToCart('Oppo Reno 8', 1099.99)">
+                    <div class="default-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="black" height="20" width="20" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle r="3" cy="12" cx="12"></circle></svg>
+                        <span>Shop Now</span>
+                      </div>
+                      <div class="hover-btn">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="cornflowerblue" height="20" width="20" viewBox="0 0 24 24"><circle r="1" cy="21" cx="9"></circle><circle r="1" cy="21" cx="20"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                        <span>Add to Cart</span>
+                      </div>
+                </button>
+                <button class="like-button" onclick="toggleLikeButton(this)">&#x2661;</button>
+            </div>
+              
+                <div class="product">
+                    <img src="images/Used-Unlocked-Refurbished-Cell-Phonesfor-Samsung-Galaxy-Z-Flip-5g-8GB-256GB-Android-6-7inch-Screen-Large-Capacity-Battery-5g.jpg" alt="Cover transparent">
+                    <h3>Samsung Galaxy Z-Flip</h3>
+                    <p>Price: $1699.99</p>
+                    <div class="product-action">
+                        <button onclick="decrementQuantity('Samsung Galaxy Z-Flip')">-</button>
+                        <span id="quantity-Cover transparent">0</span>
+                        <button onclick="incrementQuantity('Samsung Galaxy Z-Flip')">+</button>
+                    </div>
+                    <button onclick="addToCart('Samsung Galaxy Z-Flip', 29.99)">
+                        <div class="default-btn">
+                            <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="black" height="20" width="20" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle r="3" cy="12" cx="12"></circle></svg>
+                            <span>Shop Now</span>
+                          </div>
+                          <div class="hover-btn">
+                            <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="cornflowerblue" height="20" width="20" viewBox="0 0 24 24"><circle r="1" cy="21" cx="9"></circle><circle r="1" cy="21" cx="20"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                            <span>Add to Cart</span>
+                          </div>
+                    </button>
+                    <button class="like-button" onclick="toggleLikeButton(this)">&#x2661;</button>
+                </div>
+            </div>
+<!-- ------------------------------------------------------- -->
+
+<!-- cart  -->
+        
+    <!-- <div id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+        </ul>
+        <p id="total">Total: $0</p>
+        <button onclick="checkout()">Checkout</button>
+    </div> -->
+
+    </header>
+</body>
+</html>
